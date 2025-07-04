@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WSD Transport</title>
+  <meta name="description" content="WSD Transport — Transport express, déménagement, taxi colis 7j/7 dans la Marne." />
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <header id="header">
+    <div class="header-flex container">
+      <!-- Menu Burger -->
+      <button id="burger" class="burger-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-mobile">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+
+      <!-- Titre + Menu Desktop -->
+      <div class="header-left">
+        <h1>WSD Transport</h1>
+        <nav class="nav-desktop" aria-label="Menu principal">
+          <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#devis">Devis</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Logo -->
+      <div class="header-right">
+        <img src="logo.png" alt="Logo WSD Transport" />
+      </div>
+    </div>
+
+    <!-- Menu Mobile -->
+    <nav id="nav-mobile" class="nav-mobile" aria-label="Menu mobile">
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#devis">Devis</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Accueil -->
+    <section id="accueil">
+      <div class="container accueil-content">
+        <div class="accueil-text">
+          <h2>WSD Transport</h2>
+          <p>Fondée en 2018, WSD Transport est une entreprise familiale spécialisée dans le transport et la logistique.
+             Son nom reprend les initiales des trois frères à l'origine du projet, illustrant une collaboration fondée sur
+             la confiance et la proximité. Depuis sa création, la société s’est développée progressivement en proposant des
+             prestations adaptées aux besoins des particuliers comme des professionnels, avec un souci constant de fiabilité et de 
+             réactivité.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+        <h2>Nos Services</h2>
+        <ul class="service-list">
+          <li>Transport Express
+            <ul>
+              <li>Taxi colis</li>
+            </ul>
+          </li>
+          <li>Déménagement Particulier / Professionnel</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- À propos -->
+    <section id="apropos">
+      <div class="container">
+        <h2>À propos</h2>
+        <div class="apropos-flex">
+          <div class="apropos-text">
+            <p>
+              Transport express / Taxi colis (4m³ à 20m³) – 7j/7 et 24h/24<br />
+              Transport lourd : semi-remorque bâchée
+            </p>
+          </div>
+          <div class="apropos-gallery">
+            <img src="images/camion.jpeg" alt="Camion léger WSD" />
+            <img src="images/camion2.jpeg" alt="Camion moyen volume WSD" />
+            <img src="images/camion3.JPEG" alt="Camion bâché WSD" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Devis -->
+    <section id="devis">
+      <div class="container">
+        <h2>Demande de devis</h2>
+        <form action="sendmail.php" method="post">
+          <label for="nom">Nom :</label>
+          <input type="text" id="nom" name="nom" required />
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" required />
+          <label for="type">Type de transport :</label>
+          <select id="type" name="type">
+            <option value="marchandises">Marchandises</option>
+            <option value="express">Express</option>
+          </select>
+          <label for="message">Détails :</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+          <button type="submit" class="btn-primary">Envoyer</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container contact-flex">
+        <div class="contact-info">
+          <h2>Contact</h2>
+          <p><i class="fas fa-map-marker-alt"></i> 1 Chem. de la Breuille, 51300 Blaise-sous-Arzillières</p>
+          <p><i class="fas fa-phone-alt"></i> 03.62.02.52.52</p>
+          <p><i class="fas fa-envelope"></i> wsdtransport51@gmail.com</p>
+        </div>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2634.9118843415004!2d4.5832674!3d48.6689279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ebf583c7a49b5f%3A0x5a4ccedc9dd43ca5!2sWSD%20Transport!5e0!3m2!1sfr!2sfr!4v1750818300218!5m2!1sfr!2sfr&gestureHandling=greedy"
+            width="100%" height="300" style="border:0;"
+            allowfullscreen loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 WSD Transport. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script>
+    const burger     = document.getElementById("burger");
+    const mobileMenu = document.getElementById("nav-mobile");
+
+    // Ouverture/Fermeture menu
+    burger.addEventListener("click", () => {
+      const expanded = burger.getAttribute("aria-expanded") === "true";
+      burger.setAttribute("aria-expanded", !expanded);
+      burger.classList.toggle("open");
+      mobileMenu.classList.toggle("active");
+    });
+
+    // Effet d’ombre sur scroll
+    window.addEventListener("scroll", () => {
+      document.getElementById("header")
+        .classList.toggle("scrolled", window.scrollY > 20);
+    });
+
+    // Ferme le menu après clic sur lien mobile
+    mobileMenu.querySelectorAll("a").forEach(link =>
+      link.addEventListener("click", () => {
+        burger.setAttribute("aria-expanded", "false");
+        burger.classList.remove("open");
+        mobileMenu.classList.remove("active");
+      })
+    );
+  </script>
+</body>
+</html>
